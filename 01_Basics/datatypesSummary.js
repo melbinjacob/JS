@@ -12,9 +12,13 @@
 // 7. BigInt
 
 const score = 2;
+console.log(typeof score);
 const scoreValue = 2.2;
+console.log(typeof scoreValue);
+
 
 const isLoggedIn = false;
+
 const outsideTemp =  null;
 let userEmail;
 
