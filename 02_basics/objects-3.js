@@ -6,7 +6,7 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor : instructur} = course;
+const {courseInstructor : instructur} = course; // Object destructuring
 
 console.log(instructur);
 
@@ -22,3 +22,14 @@ navbar(company = "Hitesh")
 //     "Age" : 12,
 //     "Place": "Kasargod"
 // }
+
+
+const trip = {
+    name : "Ney year trip",
+    budget: 2500,
+    stay: "Tent stay"
+}
+
+const {budget:price} = trip
+
+console.log(price);
