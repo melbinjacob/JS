@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS PLAYGROUND</title>
+</head>
+<body>
+</body>
+
+<script>
+
+    function addElement(element, text = ""){
+        
+        let htmlElement = document.createElement(element);
+
+        if(element === "h1" || element === "h2" || element === "h3" || element === "h4" || element === "h5" || element === "h6" || element === "p"){
+            htmlElement.appendChild(document.createTextNode(text));
+            document.body.appendChild(htmlElement)
+            console.log("H1 EXICUTED");
+
+        }else if (element === "div") {
+            htmlElement.style.width = "80px"
+            htmlElement.style.height = "300px"
+            htmlElement.style.backgroundColor = "orange"
+            htmlElement.style.color = "white"
+            document.body.appendChild(htmlElement)
+            console.log("DIV EXICUTED");
+        }else{
+            console.log("WTF!");
+        }
+
+    }
+
+   
+
+
+    addElement("div", "Hello div")
+    addElement("p", "Hello div")
+    addElement("p", "Hello div")
+    addElement("p", "Hello div")
+    addElement("p", "Hello div")
+    addElement("p", "Hello div")
+    addElement("p", "Hello div")
+    addElement("p", "Hello div")
+    addElement("div", "Hello div")
+    addElement("div", "Hello div")
+    addElement("div", "Hello div")
+    addElement("div", "Hello div")
+    addElement("div", "Hello div")
+  
+</script>
+
+</html>
